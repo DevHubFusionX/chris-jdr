@@ -101,7 +101,7 @@ const Trading = () => {
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="https://wa.me/1234567890" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center gap-2">
+                  <a href="https://wa.me/08102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center gap-2">
                     <MessageCircle className="w-5 h-5" />
                     Free Consultation
                   </a>
@@ -134,7 +134,7 @@ const Trading = () => {
                   >
                     <TrendingUp className="w-10 h-10 text-white" />
                   </motion.div>
-                  <h3 className="text-2xl font-bold mb-2">Chris Johnson</h3>
+                  <h3 className="text-2xl font-bold mb-2">JDISOLUTIONS</h3>
                   <p className="text-accent font-medium">Professional Crypto Trader & Analyst</p>
                 </div>
                 
@@ -159,7 +159,7 @@ const Trading = () => {
 
                 <div className="text-center">
                   <motion.a 
-                    href="https://wa.me/1234567890" 
+                    href="https://wa.me/08102378249" 
                     className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -323,7 +323,7 @@ const Trading = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/1234567890" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="https://wa.me/08102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Chat Now
               </a>

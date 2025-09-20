@@ -223,13 +223,13 @@ const Home = () => {
                 >
                   <span className="text-white font-bold text-2xl">C</span>
                 </motion.div>
-                <h3 className="text-2xl font-bold mb-2">Chris JDR</h3>
+                <h3 className="text-2xl font-bold mb-2">JDISOLUTIONS</h3>
                 <p className="text-accent font-medium">Professional Crypto Trader</p>
               </div>
               
               <div className="text-center">
                 <motion.a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/08102378249" 
                   className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -283,7 +283,7 @@ const Home = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/1234567890" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="https://wa.me/08102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Contact Me
               </a>

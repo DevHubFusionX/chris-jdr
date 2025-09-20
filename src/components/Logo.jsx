@@ -30,7 +30,7 @@ const Logo = ({ size = 'md', animated = false }) => {
       
       {/* Main Letter */}
       <span className={`text-white font-bold font-heading relative z-10 ${size === 'xl' ? 'text-5xl' : size === 'lg' ? 'text-4xl' : size === 'md' ? 'text-xl' : 'text-lg'}`}>
-        C
+        J
       </span>
       
       {/* Decorative Elements */}

@@ -167,7 +167,7 @@ const LoadingScreen = ({ onComplete }) => {
         {/* Enhanced Brand Text */}
         <motion.div className="mb-3">
           <div className="text-5xl font-bold font-heading flex justify-center items-center space-x-2">
-            {/* CHR - slides from left with bounce */}
+            {/* JDI - slides from left with bounce */}
             <motion.span 
               className="gradient-text"
               initial={{ x: -100, opacity: 0, rotateY: -90 }}
@@ -181,10 +181,10 @@ const LoadingScreen = ({ onComplete }) => {
               }}
               whileHover={{ scale: 1.1, rotateY: 10 }}
             >
-              CHR
+              JDI
             </motion.span>
             
-            {/* IS - drops from top with rotation */}
+            {/* SO - drops from top with rotation */}
             <motion.span 
               className="gradient-text"
               initial={{ y: -100, opacity: 0, rotate: -180 }}
@@ -198,10 +198,10 @@ const LoadingScreen = ({ onComplete }) => {
               }}
               whileHover={{ scale: 1.1, rotate: 5 }}
             >
-              IS
+              SO
             </motion.span>
             
-            {/* JDR - slides from right with flip */}
+            {/* LUTIONS - slides from right with flip */}
             <motion.span 
               className="gradient-text"
               initial={{ x: 100, opacity: 0, rotateY: 90 }}
@@ -215,7 +215,7 @@ const LoadingScreen = ({ onComplete }) => {
               }}
               whileHover={{ scale: 1.1, rotateY: -10 }}
             >
-              JDR
+              LUTIONS
             </motion.span>
           </div>
           

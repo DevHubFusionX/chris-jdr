@@ -28,7 +28,7 @@ const Contact = () => {
       title: "WhatsApp",
       description: "Instant responses for urgent crypto needs",
       action: "Chat Now",
-      link: "https://wa.me/1234567890",
+      link: "https://wa.me/08102378249",
       color: "bg-green-600 hover:bg-green-700",
       popular: true
     },
@@ -249,7 +249,7 @@ const Contact = () => {
                   >
                     <span className="text-white font-bold text-2xl">C</span>
                   </motion.div>
-                  <h3 className="text-2xl font-bold mb-2">Chris Johnson</h3>
+                  <h3 className="text-2xl font-bold mb-2">JDISOLUTIONS</h3>
                   <p className="text-accent font-medium">Professional Crypto Trader</p>
                   <div className="flex justify-center items-center gap-1 mt-2">
                     {[...Array(5)].map((_, i) => (
@@ -360,7 +360,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.a 
-              href="https://wa.me/1234567890"
+              href="https://wa.me/08102378249"
               className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

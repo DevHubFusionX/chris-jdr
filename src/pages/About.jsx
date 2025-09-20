@@ -86,13 +86,13 @@ const About = () => {
                 About <span className="gradient-text">Me</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                Hi, I'm Chris JDR - a professional crypto trader and consultant with over 3 years of experience helping people navigate the cryptocurrency market safely and profitably.
+                Hi, I'm JDISOLUTIONS - a professional crypto trader and consultant with over 3 years of experience helping people navigate the cryptocurrency market safely and profitably.
               </p>
               <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8">
                 What started as personal curiosity about Bitcoin in 2021 has evolved into a full-time profession helping clients achieve their financial goals through strategic crypto trading and secure transactions.
               </p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a href="https://wa.me/1234567890" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
+                <a href="https://wa.me/08102378249" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
                   <MessageCircle className="w-5 h-5" />
                   Let's Chat
                 </a>
@@ -115,7 +115,7 @@ const About = () => {
                   >
                     <span className="text-white font-bold text-2xl sm:text-4xl">C</span>
                   </motion.div>
-                  <h3 className="text-2xl sm:text-3xl font-bold mb-2">Chris JDR</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-2">JDISOLUTIONS</h3>
                   <p className="text-accent font-medium text-base sm:text-lg">Professional Crypto Trader</p>
                   <p className="text-gray-300 text-xs sm:text-sm mt-2">Based in New York, USA</p>
                 </div>
@@ -338,7 +338,7 @@ const About = () => {
               
               <div className="space-y-4">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="https://wa.me/1234567890" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
+                  <a href="https://wa.me/08102378249" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
                     <MessageCircle className="w-5 h-5" />
                     Chat on WhatsApp
                   </a>
