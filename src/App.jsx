@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen';
 import Home from './pages/Home';
-import Trading from './pages/Trading';
+
 import HowItWorks from './pages/HowItWorks';
 import About from './pages/About';
 import Blog from './pages/Blog';
@@ -34,7 +34,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/trading" element={<Trading />} />
+
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/about" element={<About />} />
               <Route path="/blog" element={<Blog />} />

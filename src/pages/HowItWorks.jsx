@@ -49,28 +49,7 @@ const HowItWorks = () => {
     }
   ];
 
-  const tradingSteps = [
-    {
-      icon: <MessageCircle className="w-8 h-8" />,
-      title: "Free Consultation",
-      description: "Schedule a free 30-minute call to discuss your trading goals and experience level."
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Strategy Development",
-      description: "I'll create a personalized trading strategy based on your risk tolerance and goals."
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Start Trading",
-      description: "Begin with signals, portfolio management, or coaching based on your chosen service."
-    },
-    {
-      icon: <CheckCircle className="w-8 h-8" />,
-      title: "Track Results",
-      description: "Monitor your progress with regular reports and ongoing support for optimal results."
-    }
-  ];
+
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -101,7 +80,7 @@ const HowItWorks = () => {
               How It <span className="gradient-text">Works</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Simple, transparent processes for buying crypto, selling crypto, and accessing professional trading services.
+              Simple, transparent processes for buying and selling cryptocurrencies securely.
             </p>
           </motion.div>
         </div>
@@ -209,56 +188,7 @@ const HowItWorks = () => {
         </div>
       </section>
 
-      {/* Trading Services Process */}
-      <section className="py-20 bg-dark/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl font-bold mb-4 text-secondary">Trading Services</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Get professional trading guidance with personalized strategies and ongoing support.
-            </p>
-          </motion.div>
-          
-          <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            {tradingSteps.map((step, index) => (
-              <motion.div 
-                key={index} 
-                className="text-center relative"
-                variants={fadeInUp}
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="bg-secondary/20 w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 border-2 border-secondary/30">
-                  <div className="text-secondary">{step.icon}</div>
-                </div>
-                <div className="bg-secondary/20 text-secondary w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">
-                  {index + 1}
-                </div>
-                <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                <p className="text-gray-300">{step.description}</p>
-                
-                {index < tradingSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-10 -right-4 text-secondary/50">
-                    <ArrowRight className="w-8 h-8" />
-                  </div>
-                )}
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+
 
       {/* Security & Trust */}
       <section className="py-20">
@@ -333,7 +263,7 @@ const HowItWorks = () => {
                 <TrendingUp className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-accent">Proven Track Record</h3>
-              <p className="text-gray-300">3+ years of successful transactions with satisfied clients worldwide.</p>
+              <p className="text-gray-300">3+ years of successful exchange transactions with satisfied clients worldwide.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -364,7 +294,7 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Choose your service and start your crypto journey today. Fast, secure, and reliable transactions guaranteed.
+            Start your crypto journey today with secure buying and selling. Fast, secure, and reliable transactions guaranteed.
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -379,7 +309,7 @@ const HowItWorks = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/08102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="https://wa.me/+2348102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Chat
               </a>

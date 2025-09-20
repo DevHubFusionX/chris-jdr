@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navItems = [
     { path: '/', label: 'Home', icon: <User className="w-4 h-4" /> },
-    { path: '/trading', label: 'Trading', icon: <TrendingUp className="w-4 h-4" /> },
+
     { path: '/how-it-works', label: 'How It Works', icon: <HelpCircle className="w-4 h-4" /> },
     { path: '/about', label: 'About', icon: <User className="w-4 h-4" /> },
     { path: '/blog', label: 'Blog', icon: <BookOpen className="w-4 h-4" /> },
@@ -50,7 +50,7 @@ const Navbar = () => {
               </motion.div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold gradient-text font-heading">JDISOLUTIONS</span>
-                <span className="text-xs text-accent font-medium tracking-wider">CRYPTO SPECIALIST</span>
+                <span className="text-xs text-accent font-medium tracking-wider">EXCHANGE SPECIALIST</span>
               </div>
             </Link>
             
@@ -85,7 +85,7 @@ const Navbar = () => {
               {/* CTA Buttons */}
               <div className="flex items-center space-x-4 ml-6">
                 <motion.a 
-                  href="https://wa.me/08102378249" 
+                  href="https://wa.me/+2348102378249" 
                   className="flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -124,7 +124,7 @@ const Navbar = () => {
             </motion.div>
             <div className="flex flex-col">
               <span className="text-lg font-bold gradient-text font-heading">JDISOLUTIONS</span>
-              <span className="text-xs text-accent">Crypto Trader</span>
+              <span className="text-xs text-accent">Exchange Specialist</span>
             </div>
           </Link>
           <motion.button 
@@ -191,7 +191,7 @@ const Navbar = () => {
                       <span className="text-xl font-bold gradient-text font-heading">JDISOLUTIONS</span>
                       <div className="flex items-center gap-1 mt-1">
                         <Star className="w-3 h-3 text-yellow-400 fill-current" />
-                        <span className="text-xs text-accent">Professional Trader</span>
+                        <span className="text-xs text-accent">Exchange Specialist</span>
                       </div>
                     </div>
                   </div>
@@ -246,7 +246,7 @@ const Navbar = () => {
                 {/* Footer Actions */}
                 <div className="pt-6 border-t border-white/10 space-y-4">
                   <motion.a 
-                    href="https://wa.me/08102378249" 
+                    href="https://wa.me/+2348102378249" 
                     className="flex items-center space-x-3 px-4 py-4 rounded-xl bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-colors"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

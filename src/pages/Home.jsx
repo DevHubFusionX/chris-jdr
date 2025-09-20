@@ -41,7 +41,7 @@ const Home = () => {
             </motion.h1>
             
             <motion.p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed px-4" variants={fadeInUp}>
-              Your one-stop solution for crypto trading, OTC deals, and expert trading services.
+              Your trusted partner for secure cryptocurrency buying and selling transactions.
             </motion.p>
             
             <motion.div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 md:mb-16 px-4" variants={fadeInUp}>
@@ -56,8 +56,8 @@ const Home = () => {
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/trading" className="block w-full sm:w-auto bg-secondary hover:bg-secondary/80 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center">
-                  Trading Services
+                <Link to="/contact" className="block w-full sm:w-auto bg-secondary hover:bg-secondary/80 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center">
+                  Get Quote
                 </Link>
               </motion.div>
             </motion.div>
@@ -92,7 +92,7 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">What I Offer</h2>
-            <p className="text-lg sm:text-xl text-gray-300">Professional crypto services tailored to your needs</p>
+            <p className="text-lg sm:text-xl text-gray-300">Secure cryptocurrency transactions with competitive rates</p>
           </motion.div>
           
           <motion.div 
@@ -158,11 +158,11 @@ const Home = () => {
               >
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
               </motion.div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Trading Services</h3>
-              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Professional trading strategies, signals, and portfolio management services.</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Exchange Services</h3>
+              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Fast and secure cryptocurrency exchange with competitive rates and instant processing.</p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/trading" className="bg-secondary hover:bg-secondary/80 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
-                  Learn More
+                <Link to="/contact" className="bg-secondary hover:bg-secondary/80 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+                  Get Started
                 </Link>
               </motion.div>
             </motion.div>
@@ -182,15 +182,15 @@ const Home = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Why Choose Me?</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Professional crypto trading services with a personal touch. I handle every transaction with care and expertise.
+                Professional cryptocurrency exchange services with a personal touch. I handle every transaction with care and security.
               </p>
               
               <div className="space-y-4">
                 {[
-                  "3+ Years Trading Experience",
+                  "3+ Years Exchange Experience",
                   "$2M+ in Successful Transactions", 
                   "24/7 Customer Support",
-                  "Secure & Regulated Operations"
+                  "Secure & Fast Processing"
                 ].map((item, index) => (
                   <motion.div 
                     key={index}
@@ -224,12 +224,12 @@ const Home = () => {
                   <span className="text-white font-bold text-2xl">C</span>
                 </motion.div>
                 <h3 className="text-2xl font-bold mb-2">JDISOLUTIONS</h3>
-                <p className="text-accent font-medium">Professional Crypto Trader</p>
+                <p className="text-accent font-medium">Crypto Exchange Specialist</p>
               </div>
               
               <div className="text-center">
                 <motion.a 
-                  href="https://wa.me/08102378249" 
+                  href="https://wa.me/+2348102378249" 
                   className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -283,7 +283,7 @@ const Home = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/08102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="https://wa.me/+2348102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Contact Me
               </a>

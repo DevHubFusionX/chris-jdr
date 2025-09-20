@@ -225,7 +225,7 @@ const LoadingScreen = ({ onComplete }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.4, duration: 0.5 }}
           >
-            ELITE CRYPTO SPECIALIST
+            CRYPTO EXCHANGE SPECIALIST
           </motion.p>
         </motion.div>
 

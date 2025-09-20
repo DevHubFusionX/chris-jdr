@@ -19,12 +19,12 @@ const About = () => {
     {
       year: "2022",
       title: "First Clients",
-      description: "Started helping friends and family with crypto transactions and trading advice."
+      description: "Started helping friends and family with crypto transactions and exchange services."
     },
     {
       year: "2023",
       title: "Professional Services",
-      description: "Launched professional trading services with proven strategies and risk management."
+      description: "Launched professional crypto exchange services with secure transaction processing."
     },
     {
       year: "2024",
@@ -86,13 +86,13 @@ const About = () => {
                 About <span className="gradient-text">Me</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                Hi, I'm JDISOLUTIONS - a professional crypto trader and consultant with over 3 years of experience helping people navigate the cryptocurrency market safely and profitably.
+                Hi, I'm JDISOLUTIONS - a professional cryptocurrency exchange specialist with over 3 years of experience helping people buy and sell cryptocurrencies safely and securely.
               </p>
               <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8">
-                What started as personal curiosity about Bitcoin in 2021 has evolved into a full-time profession helping clients achieve their financial goals through strategic crypto trading and secure transactions.
+                What started as personal curiosity about Bitcoin in 2021 has evolved into a full-time profession helping clients buy and sell cryptocurrencies through secure and reliable transactions.
               </p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a href="https://wa.me/08102378249" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
+                <a href="https://wa.me/+2348102378249" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
                   <MessageCircle className="w-5 h-5" />
                   Let's Chat
                 </a>
@@ -116,7 +116,7 @@ const About = () => {
                     <span className="text-white font-bold text-2xl sm:text-4xl">C</span>
                   </motion.div>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-2">JDISOLUTIONS</h3>
-                  <p className="text-accent font-medium text-base sm:text-lg">Professional Crypto Trader</p>
+                  <p className="text-accent font-medium text-base sm:text-lg">Crypto Exchange Specialist</p>
                   <p className="text-gray-300 text-xs sm:text-sm mt-2">Based in New York, USA</p>
                 </div>
                 
@@ -154,7 +154,7 @@ const About = () => {
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">My Journey</h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-              From curious beginner to professional trader - here's how I built my expertise in cryptocurrency trading.
+              From curious beginner to professional exchange specialist - here's how I built my expertise in cryptocurrency transactions.
             </p>
           </motion.div>
           
@@ -282,7 +282,7 @@ const About = () => {
             >
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Why Work With Me?</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8">
-                I'm not just another crypto trader. I'm your dedicated partner in achieving financial success through strategic cryptocurrency investments.
+                I'm not just another crypto exchange. I'm your dedicated partner in secure cryptocurrency buying and selling transactions.
               </p>
               
               <div className="space-y-6">
@@ -293,15 +293,15 @@ const About = () => {
                   },
                   {
                     title: "Proven Track Record", 
-                    desc: "127% average ROI and 89% win rate with transparent performance history."
+                    desc: "Fast processing and competitive rates with transparent pricing structure."
                   },
                   {
                     title: "Risk Management",
-                    desc: "Conservative approach focused on protecting your capital while maximizing returns."
+                    desc: "Secure approach focused on protecting your funds during all transactions."
                   },
                   {
                     title: "24/7 Availability",
-                    desc: "Crypto markets never sleep, and neither do I when it comes to your success."
+                    desc: "Crypto markets never sleep, and neither do I when it comes to your transactions."
                   }
                 ].map((item, index) => (
                   <motion.div 
@@ -332,13 +332,13 @@ const About = () => {
               <div className="text-center mb-6 sm:mb-8">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Ready to Get Started?</h3>
                 <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
-                  Let's discuss your crypto goals and how I can help you achieve them safely and profitably.
+                  Let's discuss your crypto needs and how I can help you buy or sell cryptocurrencies safely and securely.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="https://wa.me/08102378249" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
+                  <a href="https://wa.me/+2348102378249" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
                     <MessageCircle className="w-5 h-5" />
                     Chat on WhatsApp
                   </a>
@@ -349,8 +349,8 @@ const About = () => {
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link to="/trading" className="block w-full border-2 border-accent text-accent hover:bg-accent hover:text-primary text-center py-4 rounded-xl font-semibold transition-colors">
-                    View Trading Services
+                  <Link to="/contact" className="block w-full border-2 border-accent text-accent hover:bg-accent hover:text-primary text-center py-4 rounded-xl font-semibold transition-colors">
+                    Get Exchange Quote
                   </Link>
                 </motion.div>
               </div>

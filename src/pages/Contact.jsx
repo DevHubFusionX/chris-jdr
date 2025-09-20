@@ -28,7 +28,7 @@ const Contact = () => {
       title: "WhatsApp",
       description: "Instant responses for urgent crypto needs",
       action: "Chat Now",
-      link: "https://wa.me/08102378249",
+      link: "https://wa.me/+2348102378249",
       color: "bg-green-600 hover:bg-green-700",
       popular: true
     },
@@ -53,9 +53,9 @@ const Contact = () => {
   const services = [
     { name: "Buy Crypto", price: "Competitive rates", time: "Instant delivery" },
     { name: "Sell Crypto", price: "Best market rates", time: "Fast settlements" },
-    { name: "Portfolio Management", price: "From $500/month", time: "24/7 monitoring" },
-    { name: "Trading Signals", price: "From $200/month", time: "Daily signals" },
-    { name: "1-on-1 Coaching", price: "From $150/hour", time: "Personal guidance" }
+    { name: "Bitcoin Exchange", price: "Competitive rates", time: "Instant processing" },
+    { name: "Ethereum Exchange", price: "Best market rates", time: "Fast settlements" },
+    { name: "Altcoin Exchange", price: "Fair pricing", time: "Secure transactions" }
   ];
 
   const fadeInUp = {
@@ -87,7 +87,7 @@ const Contact = () => {
               Get In <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to start your crypto journey? Whether you want to buy, sell, or get professional trading guidance, I'm here to help you succeed.
+              Ready to start your crypto journey? Whether you want to buy or sell cryptocurrencies, I'm here to help you with secure and reliable transactions.
             </p>
           </motion.div>
         </div>
@@ -200,9 +200,9 @@ const Contact = () => {
                     <option value="">Select a service</option>
                     <option value="buy-crypto">Buy Cryptocurrency</option>
                     <option value="sell-crypto">Sell Cryptocurrency</option>
-                    <option value="portfolio-management">Portfolio Management</option>
-                    <option value="trading-signals">Trading Signals</option>
-                    <option value="coaching">1-on-1 Coaching</option>
+                    <option value="bitcoin-exchange">Bitcoin Exchange</option>
+                    <option value="ethereum-exchange">Ethereum Exchange</option>
+                    <option value="altcoin-exchange">Altcoin Exchange</option>
                     <option value="consultation">Free Consultation</option>
                     <option value="other">Other</option>
                   </select>
@@ -215,7 +215,7 @@ const Contact = () => {
                     onChange={handleChange}
                     rows={6}
                     className="w-full px-4 py-3 bg-dark border border-secondary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent transition-colors resize-none"
-                    placeholder="Tell me about your crypto goals, budget, experience level, or any questions you have..."
+                    placeholder="Tell me what cryptocurrency you want to buy or sell, the amount, and any questions you have..."
                     required
                   ></textarea>
                 </div>
@@ -250,12 +250,12 @@ const Contact = () => {
                     <span className="text-white font-bold text-2xl">C</span>
                   </motion.div>
                   <h3 className="text-2xl font-bold mb-2">JDISOLUTIONS</h3>
-                  <p className="text-accent font-medium">Professional Crypto Trader</p>
+                  <p className="text-accent font-medium">Crypto Exchange Specialist</p>
                   <div className="flex justify-center items-center gap-1 mt-2">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                     ))}
-                    <span className="text-sm text-gray-300 ml-2">(4.9/5 from 127+ clients)</span>
+                    <span className="text-sm text-gray-300 ml-2">(4.9/5 from 127+ transactions)</span>
                   </div>
                 </div>
                 
@@ -270,7 +270,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    <span>3+ years professional experience</span>
+                    <span>3+ years exchange experience</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
@@ -310,7 +310,7 @@ const Contact = () => {
                     <strong className="text-white">Free consultation:</strong> First 30 minutes are complimentary
                   </p>
                   <p className="text-gray-300">
-                    <strong className="text-white">Minimum amounts:</strong> $500 for trading services, no minimum for buy/sell
+                    <strong className="text-white">Minimum amounts:</strong> No minimum for buy/sell transactions
                   </p>
                   <p className="text-gray-300">
                     <strong className="text-white">Payment methods:</strong> Bank transfer, PayPal, crypto
@@ -350,7 +350,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Don't wait - the crypto market moves fast. Get started today with professional guidance and secure transactions.
+            Don't wait - the crypto market moves fast. Get started today with secure buying and selling transactions.
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -360,7 +360,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.a 
-              href="https://wa.me/08102378249"
+              href="https://wa.me/+2348102378249"
               className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
