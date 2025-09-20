@@ -30,7 +30,7 @@ const Trading = () => {
   const results = [
     { metric: "127%", label: "Average ROI", period: "Last 12 months" },
     { metric: "89%", label: "Win Rate", period: "Successful trades" },
-    { metric: "$2.1M", label: "Total Volume", period: "Client portfolios" },
+    { metric: "$127K", label: "Total Volume", period: "Client portfolios" },
     { metric: "24/7", label: "Support", period: "Always available" }
   ];
 
@@ -101,7 +101,7 @@ const Trading = () => {
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="https://wa.me/+2348102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center gap-2">
+                  <a href="mailto:Nnamdichris502@gmail.com" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center gap-2">
                     <MessageCircle className="w-5 h-5" />
                     Free Consultation
                   </a>
@@ -141,11 +141,11 @@ const Trading = () => {
                 <div className="space-y-3 text-sm mb-6">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    <span>3+ Years Professional Trading</span>
+                    <span>4+ Years Professional Trading</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    <span>$2.1M+ in Client Profits</span>
+                    <span>$127K+ in Client Profits</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
@@ -159,7 +159,7 @@ const Trading = () => {
 
                 <div className="text-center">
                   <motion.a 
-                    href="https://wa.me/+2348102378249" 
+                    href="mailto:Nnamdichris502@gmail.com" 
                     className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -323,7 +323,7 @@ const Trading = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/+2348102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="mailto:Nnamdichris502@gmail.com" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Chat Now
               </a>

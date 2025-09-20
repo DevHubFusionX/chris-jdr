@@ -45,7 +45,7 @@ const Contact = () => {
       title: "Email",
       description: "Detailed inquiries and documentation",
       action: "Send Email",
-      link: "mailto:chris@cryptotrader.com",
+      link: "mailto:Nnamdichris502@gmail.com",
       color: "bg-accent/80 hover:bg-accent"
     }
   ];
@@ -53,9 +53,9 @@ const Contact = () => {
   const services = [
     { name: "Buy Crypto", price: "Competitive rates", time: "Instant delivery" },
     { name: "Sell Crypto", price: "Best market rates", time: "Fast settlements" },
-    { name: "Bitcoin Exchange", price: "Competitive rates", time: "Instant processing" },
-    { name: "Ethereum Exchange", price: "Best market rates", time: "Fast settlements" },
-    { name: "Altcoin Exchange", price: "Fair pricing", time: "Secure transactions" }
+    { name: "Buy Gift Cards", price: "Competitive rates", time: "Instant processing" },
+    { name: "Sell Gift Cards", price: "Best market rates", time: "Fast settlements" },
+    { name: "Bitcoin Exchange", price: "Fair pricing", time: "Secure transactions" }
   ];
 
   const fadeInUp = {
@@ -87,7 +87,7 @@ const Contact = () => {
               Get In <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to start your crypto journey? Whether you want to buy or sell cryptocurrencies, I'm here to help you with secure and reliable transactions.
+              Ready to start your crypto journey? Whether you want to buy or sell cryptocurrencies or gift cards, I'm here to help you with secure and reliable transactions.
             </p>
           </motion.div>
         </div>
@@ -200,9 +200,9 @@ const Contact = () => {
                     <option value="">Select a service</option>
                     <option value="buy-crypto">Buy Cryptocurrency</option>
                     <option value="sell-crypto">Sell Cryptocurrency</option>
+                    <option value="buy-giftcards">Buy Gift Cards</option>
+                    <option value="sell-giftcards">Sell Gift Cards</option>
                     <option value="bitcoin-exchange">Bitcoin Exchange</option>
-                    <option value="ethereum-exchange">Ethereum Exchange</option>
-                    <option value="altcoin-exchange">Altcoin Exchange</option>
                     <option value="consultation">Free Consultation</option>
                     <option value="other">Other</option>
                   </select>
@@ -215,7 +215,7 @@ const Contact = () => {
                     onChange={handleChange}
                     rows={6}
                     className="w-full px-4 py-3 bg-dark border border-secondary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent transition-colors resize-none"
-                    placeholder="Tell me what cryptocurrency you want to buy or sell, the amount, and any questions you have..."
+                    placeholder="Tell me what cryptocurrency or gift cards you want to buy or sell, the amount, and any questions you have..."
                     required
                   ></textarea>
                 </div>
@@ -266,15 +266,15 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-4 h-4 text-accent" />
-                    <span>Based in New York, USA (EST)</span>
+                    <span>Based in Apapa, Nigeria (WAT)</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    <span>3+ years exchange experience</span>
+                    <span>4+ years exchange experience</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    <span>$2.1M+ in successful transactions</span>
+                    <span>$800K+ in successful transactions</span>
                   </div>
                 </div>
               </div>
@@ -350,7 +350,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Don't wait - the crypto market moves fast. Get started today with secure buying and selling transactions.
+            Don't wait - the crypto market moves fast. Get started today with secure cryptocurrency and gift cards buying and selling transactions.
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -360,7 +360,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.a 
-              href="https://wa.me/+2348102378249"
+              href="mailto:Nnamdichris502@gmail.com"
               className="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -369,7 +369,7 @@ const Contact = () => {
               Start WhatsApp Chat
             </motion.a>
             <motion.a 
-              href="https://calendly.com/chrisjohnson"
+              href="mailto:Nnamdichris502@gmail.com"
               className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

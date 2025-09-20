@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   const stats = [
-    { number: "3+", label: "Years Experience", icon: <Clock className="w-6 h-6" /> },
-    { number: "$2.1M", label: "Total Volume", icon: <TrendingUp className="w-6 h-6" /> },
+    { number: "4+", label: "Years Experience", icon: <Clock className="w-6 h-6" /> },
+    { number: "$127K", label: "Total Volume", icon: <TrendingUp className="w-6 h-6" /> },
     { number: "127%", label: "Average ROI", icon: <Target className="w-6 h-6" /> },
     { number: "89%", label: "Win Rate", icon: <Award className="w-6 h-6" /> }
   ];
@@ -86,13 +86,13 @@ const About = () => {
                 About <span className="gradient-text">Me</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                Hi, I'm JDISOLUTIONS - a professional cryptocurrency exchange specialist with over 3 years of experience helping people buy and sell cryptocurrencies safely and securely.
+                Hi, I'm JDISOLUTIONS - a professional cryptocurrency and gift cards exchange specialist with over 4 years of experience helping people buy and sell cryptocurrencies and gift cards safely and securely.
               </p>
               <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8">
                 What started as personal curiosity about Bitcoin in 2021 has evolved into a full-time profession helping clients buy and sell cryptocurrencies through secure and reliable transactions.
               </p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a href="https://wa.me/+2348102378249" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
+                <a href="mailto:Nnamdichris502@gmail.com" className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
                   <MessageCircle className="w-5 h-5" />
                   Let's Chat
                 </a>
@@ -117,7 +117,7 @@ const About = () => {
                   </motion.div>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-2">JDISOLUTIONS</h3>
                   <p className="text-accent font-medium text-base sm:text-lg">Crypto Exchange Specialist</p>
-                  <p className="text-gray-300 text-xs sm:text-sm mt-2">Based in New York, USA</p>
+                  <p className="text-gray-300 text-xs sm:text-sm mt-2">Based in Apapa, Nigeria</p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -282,7 +282,7 @@ const About = () => {
             >
               <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Why Work With Me?</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8">
-                I'm not just another crypto exchange. I'm your dedicated partner in secure cryptocurrency buying and selling transactions.
+                I'm not just another crypto exchange. I'm your dedicated partner in secure cryptocurrency and gift cards buying and selling transactions.
               </p>
               
               <div className="space-y-6">
@@ -332,13 +332,13 @@ const About = () => {
               <div className="text-center mb-6 sm:mb-8">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Ready to Get Started?</h3>
                 <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
-                  Let's discuss your crypto needs and how I can help you buy or sell cryptocurrencies safely and securely.
+                  Let's discuss your crypto and gift cards needs and how I can help you buy or sell cryptocurrencies and gift cards safely and securely.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="https://wa.me/+2348102378249" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
+                  <a href="mailto:Nnamdichris502@gmail.com" className="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-3">
                     <MessageCircle className="w-5 h-5" />
                     Chat on WhatsApp
                   </a>

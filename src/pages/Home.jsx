@@ -1,8 +1,20 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Zap, Users, MessageCircle, ArrowRight, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import QuickOrderModal from '../components/QuickOrderModal';
+import GiftCardModal from '../components/GiftCardModal';
 
 const Home = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [giftCardModalOpen, setGiftCardModalOpen] = useState(false);
+  const [serviceType, setServiceType] = useState('');
+
+  const openModal = (type) => {
+    setServiceType(type);
+    setModalOpen(true);
+  };
+
   const highlights = [
     { icon: <Shield className="w-8 h-8" />, title: "Secure Transactions", desc: "Bank-level security" },
     { icon: <Zap className="w-8 h-8" />, title: "Fast Settlements", desc: "Quick processing" },
@@ -41,24 +53,33 @@ const Home = () => {
             </motion.h1>
             
             <motion.p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed px-4" variants={fadeInUp}>
-              Your trusted partner for secure cryptocurrency buying and selling transactions.
+              Your trusted partner for secure cryptocurrency, gift cards buying and selling transactions.
             </motion.p>
             
             <motion.div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 md:mb-16 px-4" variants={fadeInUp}>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="block w-full sm:w-auto bg-green-600 hover:bg-green-700 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center">
+                <button 
+                  onClick={() => openModal('buy')}
+                  className="block w-full sm:w-auto bg-green-600 hover:bg-green-700 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center"
+                >
                   Buy Crypto
-                </Link>
+                </button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="block w-full sm:w-auto bg-red-600 hover:bg-red-700 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center">
+                <button 
+                  onClick={() => openModal('sell')}
+                  className="block w-full sm:w-auto bg-red-600 hover:bg-red-700 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center"
+                >
                   Sell Crypto
-                </Link>
+                </button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="block w-full sm:w-auto bg-secondary hover:bg-secondary/80 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center">
-                  Get Quote
-                </Link>
+                <button 
+                  onClick={() => setGiftCardModalOpen(true)}
+                  className="block w-full sm:w-auto bg-secondary hover:bg-secondary/80 px-6 sm:px-10 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold transition-colors text-center"
+                >
+                  Gift Cards
+                </button>
               </motion.div>
             </motion.div>
 
@@ -117,9 +138,12 @@ const Home = () => {
               <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Buy Crypto</h3>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Secure cryptocurrency purchases with competitive rates and instant delivery.</p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="bg-green-600 hover:bg-green-700 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+                <button 
+                  onClick={() => openModal('buy')}
+                  className="bg-green-600 hover:bg-green-700 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base"
+                >
                   Start Buying
-                </Link>
+                </button>
               </motion.div>
             </motion.div>
 
@@ -138,9 +162,12 @@ const Home = () => {
               <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Sell Crypto</h3>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Quick and secure crypto sales with fast settlements to your preferred method.</p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="bg-red-600 hover:bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+                <button 
+                  onClick={() => openModal('sell')}
+                  className="bg-red-600 hover:bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base"
+                >
                   Start Selling
-                </Link>
+                </button>
               </motion.div>
             </motion.div>
 
@@ -158,12 +185,15 @@ const Home = () => {
               >
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
               </motion.div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Exchange Services</h3>
-              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Fast and secure cryptocurrency exchange with competitive rates and instant processing.</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Gift Cards Exchange</h3>
+              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Buy and sell gift cards with competitive rates and instant processing.</p>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link to="/contact" className="bg-secondary hover:bg-secondary/80 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base">
+                <button 
+                  onClick={() => setGiftCardModalOpen(true)}
+                  className="bg-secondary hover:bg-secondary/80 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base"
+                >
                   Get Started
-                </Link>
+                </button>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -182,13 +212,13 @@ const Home = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Why Choose Me?</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Professional cryptocurrency exchange services with a personal touch. I handle every transaction with care and security.
+                Professional cryptocurrency and gift cards exchange services with a personal touch. I handle every transaction with care and security.
               </p>
               
               <div className="space-y-4">
                 {[
-                  "3+ Years Exchange Experience",
-                  "$2M+ in Successful Transactions", 
+                  "4+ Years Exchange Experience",
+                  "$127K+ in Successful Transactions", 
                   "24/7 Customer Support",
                   "Secure & Fast Processing"
                 ].map((item, index) => (
@@ -229,7 +259,7 @@ const Home = () => {
               
               <div className="text-center">
                 <motion.a 
-                  href="https://wa.me/+2348102378249" 
+                  href="mailto:Nnamdichris502@gmail.com" 
                   className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -283,7 +313,7 @@ const Home = () => {
               </Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a href="https://wa.me/+2348102378249" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
+              <a href="mailto:Nnamdichris502@gmail.com" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Contact Me
               </a>
@@ -291,6 +321,19 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
+
+      {/* Quick Order Modal */}
+      <QuickOrderModal 
+        isOpen={modalOpen} 
+        onClose={() => setModalOpen(false)} 
+        serviceType={serviceType} 
+      />
+
+      {/* Gift Card Modal */}
+      <GiftCardModal 
+        isOpen={giftCardModalOpen} 
+        onClose={() => setGiftCardModalOpen(false)} 
+      />
     </div>
   );
 };

@@ -1,0 +1,219 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, MessageCircle, ChevronDown, ShoppingCart, Smartphone, Gamepad2, Zap, Play, Music, Store, Target, Gift } from 'lucide-react';
+
+const GiftCardModal = ({ isOpen, onClose }) => {
+  const [formData, setFormData] = useState({
+    amount: '',
+    giftCardType: 'Amazon',
+    serviceType: 'buy'
+  });
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const message = `Hi JDISOLUTIONS,
+
+I want to ${formData.serviceType.toUpperCase()} gift cards.
+
+Details:
+• Service: ${formData.serviceType} ${formData.giftCardType} Gift Card
+• Amount: $${formData.amount}
+
+Please send me the current rates and payment instructions.
+
+Thank you!`;
+
+    const whatsappUrl = `https://wa.me/+2348102378249?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    onClose();
+  };
+
+  const giftCardOptions = [
+    { value: 'Amazon', label: 'Amazon', icon: ShoppingCart, color: 'text-orange-400' },
+    { value: 'Apple', label: 'Apple/iTunes', icon: Smartphone, color: 'text-gray-300' },
+    { value: 'Google Play', label: 'Google Play', icon: Gamepad2, color: 'text-green-400' },
+    { value: 'Steam', label: 'Steam', icon: Zap, color: 'text-blue-400' },
+    { value: 'Netflix', label: 'Netflix', icon: Play, color: 'text-red-400' },
+    { value: 'Spotify', label: 'Spotify', icon: Music, color: 'text-green-500' },
+    { value: 'Walmart', label: 'Walmart', icon: Store, color: 'text-blue-500' },
+    { value: 'Target', label: 'Target', icon: Target, color: 'text-red-500' },
+    { value: 'Other', label: 'Other', icon: Gift, color: 'text-purple-400' }
+  ];
+
+  const selectedGiftCard = giftCardOptions.find(option => option.value === formData.giftCardType);
+
+  const handleGiftCardSelect = (giftCard) => {
+    setFormData({ ...formData, giftCardType: giftCard.value });
+    setDropdownOpen(false);
+  };
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <motion.div
+            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+          />
+          
+          {/* Modal */}
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="bg-primary border border-secondary/20 rounded-2xl p-6 w-full max-w-md shadow-2xl">
+              {/* Header */}
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold gradient-text">
+                  Gift Cards
+                </h2>
+                <motion.button
+                  onClick={onClose}
+                  className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <X className="w-5 h-5" />
+                </motion.button>
+              </div>
+
+              {/* Form */}
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-2">Service Type *</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, serviceType: 'buy' })}
+                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                        formData.serviceType === 'buy' 
+                          ? 'bg-green-600 text-white' 
+                          : 'bg-dark border border-secondary/20 text-gray-300 hover:bg-secondary/20'
+                      }`}
+                    >
+                      Buy
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, serviceType: 'sell' })}
+                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                        formData.serviceType === 'sell' 
+                          ? 'bg-red-600 text-white' 
+                          : 'bg-dark border border-secondary/20 text-gray-300 hover:bg-secondary/20'
+                      }`}
+                    >
+                      Sell
+                    </button>
+                  </div>
+                </div>
+
+
+
+                <div className="relative">
+                  <label className="block text-sm font-medium mb-2">Gift Card Type *</label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      className="w-full px-4 py-3 bg-dark border border-secondary/20 rounded-lg text-white focus:outline-none focus:border-accent transition-colors flex items-center justify-between hover:border-accent/50"
+                    >
+                      <div className="flex items-center gap-3">
+                        {selectedGiftCard?.icon && (
+                          <selectedGiftCard.icon className={`w-5 h-5 ${selectedGiftCard.color}`} />
+                        )}
+                        <span>{selectedGiftCard?.label}</span>
+                      </div>
+                      <motion.div
+                        animate={{ rotate: dropdownOpen ? 180 : 0 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <ChevronDown className="w-5 h-5 text-gray-400" />
+                      </motion.div>
+                    </button>
+
+                    <AnimatePresence>
+                      {dropdownOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 right-0 mt-1 bg-primary/95 backdrop-blur-md border border-secondary/30 rounded-lg shadow-2xl z-50 max-h-48 overflow-y-auto"
+                        >
+                          {giftCardOptions.map((giftCard, index) => (
+                            <motion.button
+                              key={giftCard.value}
+                              type="button"
+                              onClick={() => handleGiftCardSelect(giftCard)}
+                              className="w-full px-4 py-3 text-left hover:bg-secondary/20 transition-colors flex items-center gap-3 border-b border-secondary/10 last:border-b-0"
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.1, delay: index * 0.05 }}
+                              whileHover={{ backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
+                            >
+                              <giftCard.icon className={`w-5 h-5 ${giftCard.color}`} />
+                              <span className="text-white">{giftCard.label}</span>
+                              {formData.giftCardType === giftCard.value && (
+                                <span className="ml-auto text-accent text-sm">✓</span>
+                              )}
+                            </motion.button>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-2">Amount (USD) *</label>
+                  <input
+                    type="number"
+                    name="amount"
+                    value={formData.amount}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-dark border border-secondary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent transition-colors"
+                    placeholder="100"
+                    min="1"
+                    required
+                  />
+                </div>
+
+                <motion.button
+                  type="submit"
+                  className="w-full bg-green-600 hover:bg-green-700 px-6 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Continue on WhatsApp
+                </motion.button>
+              </form>
+
+              <p className="text-xs text-gray-400 text-center mt-4">
+                This will open WhatsApp with your details pre-filled
+              </p>
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
+  );
+};
+
+export default GiftCardModal;

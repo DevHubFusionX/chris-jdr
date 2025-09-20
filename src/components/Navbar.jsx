@@ -50,7 +50,7 @@ const Navbar = () => {
               </motion.div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold gradient-text font-heading">JDISOLUTIONS</span>
-                <span className="text-xs text-accent font-medium tracking-wider">EXCHANGE SPECIALIST</span>
+                <span className="text-xs text-accent font-medium tracking-wider">CRYPTO SPECIALIST</span>
               </div>
             </Link>
             
@@ -85,13 +85,13 @@ const Navbar = () => {
               {/* CTA Buttons */}
               <div className="flex items-center space-x-4 ml-6">
                 <motion.a 
-                  href="https://wa.me/+2348102378249" 
+                  href="mailto:Nnamdichris502@gmail.com" 
                   className="flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <MessageCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  <span className="font-medium">WhatsApp</span>
+                  <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                  <span className="font-medium">Email</span>
                 </motion.a>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link 
@@ -124,7 +124,7 @@ const Navbar = () => {
             </motion.div>
             <div className="flex flex-col">
               <span className="text-lg font-bold gradient-text font-heading">JDISOLUTIONS</span>
-              <span className="text-xs text-accent">Exchange Specialist</span>
+              <span className="text-xs text-accent">Crypto Specialist</span>
             </div>
           </Link>
           <motion.button 
@@ -191,7 +191,7 @@ const Navbar = () => {
                       <span className="text-xl font-bold gradient-text font-heading">JDISOLUTIONS</span>
                       <div className="flex items-center gap-1 mt-1">
                         <Star className="w-3 h-3 text-yellow-400 fill-current" />
-                        <span className="text-xs text-accent">Exchange Specialist</span>
+                        <span className="text-xs text-accent">Crypto Specialist</span>
                       </div>
                     </div>
                   </div>
@@ -246,7 +246,7 @@ const Navbar = () => {
                 {/* Footer Actions */}
                 <div className="pt-6 border-t border-white/10 space-y-4">
                   <motion.a 
-                    href="https://wa.me/+2348102378249" 
+                    href="mailto:Nnamdichris502@gmail.com" 
                     className="flex items-center space-x-3 px-4 py-4 rounded-xl bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-colors"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -254,8 +254,8 @@ const Navbar = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <MessageCircle className="w-5 h-5" />
-                    <span className="font-medium">WhatsApp Chat</span>
+                    <Mail className="w-5 h-5" />
+                    <span className="font-medium">Email Contact</span>
                   </motion.a>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
